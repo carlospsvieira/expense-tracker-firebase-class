@@ -15,9 +15,17 @@
  * limitations under the License.
  */
 
-import { AppBar, Box, Button, Container, Stack, Toolbar, Typography } from '@mui/material';
-import { useAuth } from '../firebase/auth';
-import styles from '../styles/navbar.module.scss';
+import {
+  AppBar,
+  Box,
+  Button,
+  Container,
+  Stack,
+  Toolbar,
+  Typography,
+} from "@mui/material";
+import { useAuth } from "../firebase/auth";
+import styles from "../styles/navbar.module.scss";
 
 export default function NavBar() {
   const { authUser, signOut } = useAuth();
