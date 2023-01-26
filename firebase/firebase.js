@@ -14,3 +14,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAuth } from 'firebase/auth'
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBX_wE02Pv_EcBfR0SeKhT8hfRwV6ZW8Fk",
+  authDomain: "expense-tracker-ad8e8.firebaseapp.com",
+  projectId: "expense-tracker-ad8e8",
+  storageBucket: "expense-tracker-ad8e8.appspot.com",
+  messagingSenderId: "12244102122",
+  appId: "1:12244102122:web:852c77398d333f399fa093"
+};
+
+// Initialize Firebase
+export const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
