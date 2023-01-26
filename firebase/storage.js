@@ -25,7 +25,7 @@ import {
 import { storage } from "./firebase";
 
 // Bucket URL from Storage in Firebase Console
-const BUCKET_URL = "";
+const BUCKET_URL = "gs://expense-tracker-ad8e8.appspot.com";
 
 // Uploads image and returns the storage bucket
 export async function uploadImage(image, uid) {
